@@ -1,0 +1,20 @@
+$demo:green;
+$color-primary: #5094F3;
+$back-primary: #F8F8F8;
+$img-color:#3286ff;
+$font-color:#fff;
+
+//指定行数范围, 超出隐藏为...
+@mixin ellipsis($rows){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $rows > 1 {
+    display: -webkit-box;
+    -webkit-line-clamp: $rows;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  } @else {
+    white-space: nowrap;
+  }
+}

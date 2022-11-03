@@ -1,0 +1,6 @@
+# 只在测试模式中被载入
+NODE_ENV = 'test'
+
+# 后端代理地址
+VUE_APP_API_URL:''
+
